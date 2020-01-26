@@ -1,6 +1,7 @@
 # byte-auth
 ![GitHub](https://img.shields.io/github/license/69/byte-auth?style=flat-square) ![npm](https://img.shields.io/npm/v/byte-auth?style=flat-square)
 
+[npm](https://www.npmjs.com/package/byte-auth) | [github](https://github.com/69/byte-auth)
 
 a small script to log into your byte account via cli
 
