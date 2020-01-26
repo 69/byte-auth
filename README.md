@@ -6,7 +6,7 @@ currently only supports sign-in / sign-up with a google account, *not* apple id.
 **⚠️ Warning**: This utilises an undocumented private API of Byte. I am not responsible for any actions Byte may take upon you for using this application.
 
 ## Usage
-`npx @69/byte-auth`
+`npx byte-auth`
 
 or 
 
