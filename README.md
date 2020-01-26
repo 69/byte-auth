@@ -1,4 +1,7 @@
 # byte-auth
+![GitHub](https://img.shields.io/github/license/69/byte-auth?style=flat-square) ![npm](https://img.shields.io/npm/v/byte-auth?style=flat-square)
+
+
 a small script to log into your byte account via cli
 
 currently only supports sign-in / sign-up with a google account, *not* apple id.
