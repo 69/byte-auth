@@ -1,14 +1,11 @@
 {
-  "name": "@69/byte-auth",
-  "version": "1.0.1",
+  "name": "byte-auth",
+  "version": "1.0.2",
   "main": "byte.js",
   "bin": "./auth.js",
   "repository": "https://github.com/69/byte-auth.git",
   "author": "jammy <jammy@loves.shib.es>",
   "license": "GPL-3.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "dependencies": {
     "axios": "^0.19.2",
     "inquirer": "^7.0.4",
