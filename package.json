@@ -1,5 +1,5 @@
 {
-  "name": "byte-auth",
+  "name": "@69/byte-auth",
   "version": "1.0.0",
   "main": "byte.js",
   "bin": "./auth.js",
