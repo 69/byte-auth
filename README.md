@@ -14,4 +14,8 @@ currently only supports sign-in / sign-up with a google account, *not* apple id.
 
 or 
 
+`npm i byte-auth -g && byte-auth`
+
+or 
+
 `git clone https://github.com/69/byte-auth` and running `auth.js`
