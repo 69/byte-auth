@@ -1,6 +1,6 @@
 {
   "name": "byte-auth",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "main": "byte.js",
   "bin": "./auth.js",
   "repository": "https://github.com/69/byte-auth.git",
