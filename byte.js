@@ -1,6 +1,6 @@
 const axios = require('axios');
 const queryString = require('querystring');
-const CLIENT_ID = '236591221969-rgvearthmh0mq7bf3atnne07e6jsqmbf.apps.googleusercontent.com';
+const { client_id } = require('./config');
 
 const byteClient = axios.create({
   baseURL: 'https://api.byte.co',
@@ -18,7 +18,7 @@ const requestGoogleToken = (code, verifier) => axios({
     'content-type': 'application/x-www-form-urlencoded',
   },
   data: queryString.stringify({
-    client_id: CLIENT_ID,
+    client_id,
     code,
     grant_type: 'authorization_code',
     redirect_uri: 'urn:ietf:wg:oauth:2.0:oob',

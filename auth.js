@@ -1,16 +1,24 @@
 #!/usr/bin/env node
 const inquirer = require('inquirer');
+const querystring = require('querystring');
 const byte = require('./byte');
+const { client_id } = require('./config');
 
 const verifier = Math.floor(Math.random() * 9e6).toString();
-const oauthUrl = `${'https://accounts.google.com/o/oauth2/v2/auth'
-    + '?gidas=1&response_type=code&scope=email%20profile'
-    + '&verifier='}${verifier}&hl=en-US&redirect_uri=urn:ietf:wg:oauth:2.0:oob` +
-  '&client_id=236591221969-rgvearthmh0mq7bf3atnne07e6jsqmbf.apps.googleusercontent.com&gpsdk=gid-4.4.0';
+const params = {
+  gidas: 1,
+  response_type: 'code',
+  scope: ['email', 'profile'].join(' '),
+  verifier,
+  hl: 'en-US',
+  redirect_uri: 'urn:ietf:wg:oauth:2.0:oob',
+  client_id,
+  gpsdk: 'gid-4.4.0'
+};
+const oauthUrl = 'https://accounts.google.com/o/oauth2/v2/auth?' + querystring.encode(params);
 
 console.log('Open the following URL in any browser and log in with your Google account:');
 console.log(oauthUrl);
-
 
 const register = (googleToken) => {
   inquirer.prompt({
