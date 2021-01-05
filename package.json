@@ -7,7 +7,7 @@
   "author": "jammy <jammy@loves.shib.es>",
   "license": "GPL-3.0",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "inquirer": "^7.0.4",
     "querystring": "^0.2.0"
   }
